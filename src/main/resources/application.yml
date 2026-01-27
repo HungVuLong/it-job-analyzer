@@ -2,9 +2,10 @@ spring:
   application:
     name: Market-Analyzer-BE
   datasource:
-    url: jdbc:postgresql://localhost:5432/it_job_db
+    url: jdbc:postgresql://localhost:1306/it_job_db
     username: postgres
-    password: postgres
+    password: Hungvulong1@
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
@@ -12,7 +13,20 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 springdoc:
   swagger-ui:
     path: /swagger
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
+server:
+  port: 1010
