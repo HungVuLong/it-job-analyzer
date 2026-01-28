@@ -3,8 +3,8 @@ spring:
     name: Market-Analyzer-BE
   datasource:
     url: jdbc:postgresql://localhost:1306/it_job_db
-    username: postgres
-    password: Hungvulong1@
+    username: long
+    password: long123
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -29,4 +29,5 @@ logging:
               BasicBinder: TRACE
 
 server:
-  port: 1010
+  port: 8081
+
