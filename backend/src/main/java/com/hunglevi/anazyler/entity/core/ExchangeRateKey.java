@@ -1,4 +1,4 @@
-package com.hunglevi.anazyler.entity;
+package com.hunglevi.anazyler.entity.core;
 
 import lombok.*;
 

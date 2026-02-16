@@ -1,4 +1,4 @@
-package com.hunglevi.anazyler.entity.dto;
+package com.hunglevi.anazyler.entity.staging;
 
 import jakarta.persistence.*;
 import lombok.*;
